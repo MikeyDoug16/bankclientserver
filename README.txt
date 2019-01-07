@@ -41,3 +41,5 @@ Server writes both all username/password combos into a file as well as the map o
 
 The client handles the collection of the information that is entered by the user and sends that to the server. It also reads the 
 responses from the server and tells the user what the server says to inform them on how their decisions fared.
+
+In client.cpp be sure to add your own hostname for the client
