@@ -43,3 +43,5 @@ The client handles the collection of the information that is entered by the user
 responses from the server and tells the user what the server says to inform them on how their decisions fared.
 
 In client.cpp be sure to add your own hostname for the client
+
+lrucache.cpp is a test of the cache.
