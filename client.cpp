@@ -431,7 +431,7 @@ void switch_on_menu(int menu, int client){
 performs the proper actions based on the menu choice */
 int main()
 {
-	const char * host = "LAPTOP-RJRTN9LK";
+	const char * host = "";/*PUT YOUR OWN HOST ADDRESS HERE*/
 	short port = 8306;
 	int client = connect_socket((char *)host,port), menu;
 	menu = get_menu(client);
