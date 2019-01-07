@@ -72,13 +72,6 @@ int main(){
 		cout<<"true"<<endl;
 	if(cache.in_cache("ERERERERER") == false)
 		cout<<"false"<<endl;
-	string s = "Savings", res(s), key = "HDsKdAk";
-	int j = s.size();
-	for(int i=0; i<j; ++i){
-		res[i] ^= key[i%key.size()];
-		cout<<res[i];
-	}
-	cout<<endl;
 	return 0;
 	
 }
