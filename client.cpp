@@ -265,7 +265,7 @@ void transfer_money(int client){
 			read_from(client, buf);
 			cout<< buf;
 			if(strcmp(buf, "Enter the amount you want to transfer\n") == 0){
-				while(transfer < 0){
+				while(transfer < 1){
 					cout<<"Enter amount: ";
 					integ = get_client_info<string>(integ);
 					stringstream(integ) >> transfer;
@@ -305,7 +305,7 @@ void remove_account(int client){
 				cout<< "Your response: ";
 				integ = get_client_info<string>(integ);
 				stringstream(integ) >> input;
-				if(input == 0 && integ[0] != '0')
+				if(input == 0 && (integ[0] != '0' || integ.size() > 1))
 					input = -1;
 				stringstream(string());
 			}	
@@ -431,7 +431,7 @@ void switch_on_menu(int menu, int client){
 performs the proper actions based on the menu choice */
 int main()
 {
-	const char * host = "";/*PUT YOUR OWN HOST ADDRESS HERE*/
+	const char * host = "";/*Put your own host for your own server here*/
 	short port = 8306;
 	int client = connect_socket((char *)host,port), menu;
 	menu = get_menu(client);
@@ -439,4 +439,5 @@ int main()
 	switch_on_menu(menu,client);
 	return 0;
 }
+
 
