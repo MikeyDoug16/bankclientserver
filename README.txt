@@ -46,5 +46,4 @@ In client.cpp be sure to add your own hostname for the client
 
 lrucache.cpp is a test of the cache.
 
-In the future the server will be updated with threading/concurrency so that multiple users may connect at the same time but for now
-the base of the project is completed.
+Potentially in the future the server will be updated with threading/concurrency so that multiple users may connect at the same time but for now the base of the project is completed.
