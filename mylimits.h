@@ -1,0 +1,14 @@
+#define REG_BUF_MAX 256
+#define INIT_BUF_MAX 128
+#define MENU_MAX 512
+#define MENU_CHOICE_MAX 2
+#define PORT 8306
+#define CACHE_SIZE 15
+#define TIME_OUT 20
+#define MAX_TIME_OUT 3600
+#define MAX_CLIENTS 40
+#define PASS_MAX 14
+#define USERNAME_MAX 19
+#define UNAME_MAX 20
+#define MAX_NUM_ACCOUNTS 4
+#define ACCTYPE_MAX 32
